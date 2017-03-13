@@ -41,9 +41,9 @@
 - name: Workaround for systemd bug
   shell: service nginx start
 
-- shell: service status nginx
+- shell: service nginx status
 
 - name: Ensure nginx is started and enabled to start at boot.
   service: name=nginx state=started
 
-- shell: service status nginx
+- shell: service nginx status
