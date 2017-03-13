@@ -39,8 +39,7 @@
     - reload nginx
 
 - name: Workaround for systemd bug
-  shell: service nginx start && chkconfig nginx on
-
+  shell: service nginx start
 
 - name: Ensure nginx is started and enabled to start at boot.
   service: name=nginx state=started
